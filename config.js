@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Frederico Vieira | Fullstack Developer', // <title>
-  manifestName: 'Identity',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestName: 'Frederico Vieira',
+  manifestShortName: 'F. Vieira', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
