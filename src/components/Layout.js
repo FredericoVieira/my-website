@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import Particles from 'react-particles-js';
 
 import '../assets/sass/main.scss';
 
@@ -38,13 +39,34 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Eventually' },
-                { name: 'keywords', content: 'site, web' },
+                {
+                  name: 'description',
+                  content: 'Fullstack Developer | Javascript | ReactJS | React Native | NodeJS | HTML | CSS | GIT'
+                },
+                {
+                  name: 'keywords',
+                  content: 'site, frederico vieira, dev, developer, development, css, html, js, javascript, node, react, reactjs, reactnative, native, git'
+                },
               ]}
             >
               <html lang="en" />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
+              <Particles
+                params={{
+                  particles: {
+                    number: {
+                      value: 60,
+                    },
+                    size: {
+                      value: 4,
+                    },
+                  },
+                }}
+                style={{
+                  position: 'absolute',
+                }}
+              />
               <div id="wrapper">{children}</div>
             </div>
           </>
