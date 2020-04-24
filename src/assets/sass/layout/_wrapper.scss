@@ -16,6 +16,7 @@
 		min-height: 100%;
 		padding: _size(element-margin);
 		z-index: 2;
+		justify-content: center;
 
 		> * {
 			z-index: 1;

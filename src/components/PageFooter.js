@@ -3,10 +3,10 @@ import config from '../../config';
 
 export default function PageFooter() {
   return (
-    <footer id="footer">
-      <ul className="copyright">
-        <li>&copy; {config.authorName}</li>
-      </ul>
+    <footer className="footer text-center">
+      <div className="container">
+        Copyright &copy; {config.authorName}
+      </div>
     </footer>
   );
 }
