@@ -70,11 +70,15 @@
 		text-align: center;
 		text-transform: uppercase;
 		width: 16em;
-		bottom: 2%;
+		bottom: -2%;
 		color: white;
 		
-		@include breakpoint('>=large') {
-			bottom: -2%;
+		@media only screen (min-width: 600px){
+ 		  bottom: -4%;
+		}
+
+		@media only screen (min-width: 550px){
+ 		  bottom: -8%;
 		}
 
 		&:after {
