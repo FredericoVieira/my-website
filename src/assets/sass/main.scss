@@ -56,8 +56,6 @@
 		@include vendor('transition-delay', '3.5s');
 		@include vendor('transform', 'translateY(0)');
 		border: none;
-		bottom: 0;
-		color: inherit;
 		font-size: 1em;
 		height: 8.5em;
 		left: 50%;
@@ -73,11 +71,11 @@
 		bottom: -2%;
 		color: white;
 		
-		@media only screen (min-width: 600px){
+		@media only screen and (min-width: 600px){
  		  bottom: -4%;
 		}
 
-		@media only screen (min-width: 550px){
+		@media only screen and (min-width: 550px){
  		  bottom: -8%;
 		}
 
