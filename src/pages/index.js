@@ -21,6 +21,8 @@ import {
   faAws
 } from "@fortawesome/free-brands-svg-icons"
 
+import izzi from '../assets/images/izzi.png'
+import protector from '../assets/images/protector.png'
 import bdmg from '../assets/images/bdmg.jpeg'
 import kim from '../assets/images/kim.png'
 import simplicidata from '../assets/images/simplicidata.jpg'
@@ -90,6 +92,44 @@ const IndexPage = () => (
     </section>
     <section id="projects" className="projects-section bg-light">
       <div className="container">
+      <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div className="col-lg-6">
+            <img className="img-fluid" src={izzi} alt="izzi" />
+          </div>
+          <div className="col-lg-6">
+            <div className="bg-white text-center h-100 project">
+              <div className="d-flex h-100">
+                <div className="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 className="text-gray">Izzi</h4>
+                  <p className="mb-0 text-white-50">
+                    Web platform that helps e-sports players improve their skills based
+                    on coaching, courses, and game replay analysis.
+                  </p>
+                  <hr className="d-none d-lg-block mb-0 ml-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div className="col-lg-6">
+            <img className="img-fluid" src={protector} alt="protector" />
+          </div>
+          <div className="col-lg-6 order-lg-first">
+            <div className="bg-white text-center h-100 project">
+              <div className="d-flex h-100">
+                <div className="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 className="text-gray">Cropwise Protector</h4>
+                  <p className="mb-0 text-white-50">
+                    Intelligent Agricultural monitoring platform, that assists crop management
+                    with georeferenced monitoring, team performance indicators, and pest control.
+                  </p>
+                  <hr className="d-none d-lg-block mb-0 mr-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div className="col-lg-6">
             <img className="img-fluid" src={bdmg} alt="bdmg" />
